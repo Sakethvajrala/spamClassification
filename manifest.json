@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Spam Reader",
+  "description": "This extension scans your Gmail spam folder for potentially important emails that may have been mislabeled.",
+  "version": "1.0",
+  "icons": {
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "oauth2": {
+    "client_id": "335735331757-0ac49b42igrjvfua3p7olod7a3da1te9.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup" : "index.html"
+  },
+  "permissions": [
+    "identity"
+  ]
+}
